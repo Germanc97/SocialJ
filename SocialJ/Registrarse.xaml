@@ -1,5 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SocialJ.Registrarse">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialJ.Registrarse"
+             Title="Registrarse"
+             BackgroundColor="Azure"
+             >
     <ContentPage.Content>
+
+    <StackLayout>
+        <Grid Margin="20,20,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Margin="5,55,5,5" Text="Nombre Completo" HorizontalOptions="Center" FontSize="Large" />
+            <Entry Grid.Row="2" Placeholder="Digite su Nombre Completo" IsSpellCheckEnabled="false" IsTextPredictionEnabled="false" />
+            <Label Grid.Row="3" Margin="5,25,5,5" Text="Correo Electronico" HorizontalOptions="Center" FontSize="Large" />
+            <Entry Grid.Row="4" Placeholder="Digite su Correo electronico" IsSpellCheckEnabled="false" IsTextPredictionEnabled="false"/>
+            <Label Grid.Row="5" Margin="5,25,5,5" Text="Usuario" HorizontalOptions="Center" FontSize="Large" />
+            <Entry Grid.Row="6" Placeholder="Digite su Usuario" IsSpellCheckEnabled="false" IsTextPredictionEnabled="false" />
+            <Label Grid.Row="7" Margin="5,25,5,5" Text="Contraseña" HorizontalOptions="Center" FontSize="Large" />
+            <Entry Grid.Row="8" Placeholder="Digite su Contraseña" IsPassword="true" IsSpellCheckEnabled="false" IsTextPredictionEnabled="false"/>
+            <Label Grid.Row="9" Margin="5,25,5,5" Text="Confirmar Contraseña" HorizontalOptions="Center" FontSize="Large" />
+            <Entry Grid.Row="10" Placeholder="Digite su Contraseña de nuevo" IsPassword="true" IsSpellCheckEnabled="false" IsTextPredictionEnabled="false"/>
+
+            <Grid Margin="0,60,0,0" Grid.Row="11" HorizontalOptions="Center" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Margin="0,0,30,0" Text="Registrar"  FontSize="Title" />
+                <Button Grid.Column="2" Text="Cancelar" FontSize="Title" TextColor="Red" />
+            </Grid>
+        </Grid>
+        
+    </StackLayout>
+
+
+
     </ContentPage.Content>
 </ContentPage>

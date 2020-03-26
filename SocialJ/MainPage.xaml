@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" x:Class="SocialJ.MainPage"
-             Title="SocialJ"
+             Title="Inicio"
              BackgroundColor="Azure"
              >
             
@@ -70,7 +70,7 @@
                     />
             <Button Grid.Row="6"  Margin="0,50,0,0"
                     Text="Entrar" FontSize="Title"
-                    FontAttributes="Bold"
+                    FontAttributes="Bold" 
                     />
 
 
