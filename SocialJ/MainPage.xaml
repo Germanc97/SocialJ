@@ -72,8 +72,6 @@
                     Text="Entrar" FontSize="Title"
                     FontAttributes="Bold" 
                     />
-
-
         </Grid>
         
     </StackLayout>
