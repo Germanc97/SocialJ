@@ -22,5 +22,10 @@ namespace SocialJ
         {
             await Navigation.PushAsync(new Registrarse());
         }
+
+        async void Button_Clicked_Entrar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Principal());
+        }
     }
 }

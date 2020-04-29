@@ -114,6 +114,8 @@
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Logo.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Logo.imageset\LOGO_RC_Peque_180.png" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\16363.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -129,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\Logo.imageset\" />
+    <Folder Include="Assets.xcassets\user.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\SocialJ\SocialJ.projitems" Label="Shared" />

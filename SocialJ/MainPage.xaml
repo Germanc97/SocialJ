@@ -70,7 +70,8 @@
                     />
             <Button Grid.Row="6"  Margin="0,50,0,0"
                     Text="Entrar" FontSize="Title"
-                    FontAttributes="Bold" 
+                    FontAttributes="Bold"
+                    Clicked="Button_Clicked_Entrar"
                     />
         </Grid>
         
