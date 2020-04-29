@@ -26,6 +26,7 @@ namespace SocialJ
         async void Button_Clicked_Entrar(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Principal());
+            Navigation.RemovePage(this);
         }
     }
 }

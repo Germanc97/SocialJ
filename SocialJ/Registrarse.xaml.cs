@@ -11,5 +11,19 @@ namespace SocialJ
         {
             InitializeComponent();
         }
+
+        async void Button_Clicked_Registrar(object sender, EventArgs e)
+        {
+            await DisplayAlert("Exito", "Usuario creado satisfactoriamente.", "OK");
+            Navigation.RemovePage(this);
+
+            
+
+        }
+
+        async void Button_Clicked_Cancelar(object sender, EventArgs e)
+        {
+            Navigation.RemovePage(this);
+        }
     }
 }

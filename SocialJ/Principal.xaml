@@ -17,11 +17,12 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="220"/>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
                 <!--Grid de la imagen del usuario -->
                 <Grid Grid.Row="1" Grid.Column="2">
@@ -34,7 +35,8 @@
                        WidthRequest="{OnPlatform iOS=60, Android=350}"
                        HorizontalOptions="Center"
                        />
-                    <Label Grid.Row="1" Text="Usuario" FontSize="Body"/>
+                    <Label Grid.Row="1"  Text="Usuario" FontSize="Body"/>
+                    <Button Grid.Row="2"  Text="Cerrar Sesion" FontSize="Body" Clicked="Button_Clicked_CerrarSesion"/>
                 </Grid>
                 <!-- Grid del menu -->
                 <Grid Grid.Row="1" Grid.Column="0">
@@ -48,20 +50,59 @@
                     <Label Grid.Row="2" Text="Solicitudes" FontSize="Small"/>
 
                 </Grid>
-                <!-- Grid del muro-->
-                 <Grid Grid.Row="1" Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <Label Grid.Row="0" Text="Muro" HorizontalOptions="Center" FontSize="Header"/>
-                </Grid>
 
 
             </Grid>
 
+                    <!-- Grid del muro-->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Text="Muro" HorizontalOptions="Center" FontSize="Header"/>
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding Ofertas}"
+                      BackgroundColor="Azure"
+                      HasUnevenRows="True"
+                      ItemTapped="OnListViewItemTapped"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0"
+                                       Text="{Binding Nombre}"
+                                       FontAttributes="Bold"
+                                       />
+                                <Label Grid.Row="1"
+                                       Text="{Binding Cargo}"
+                                       />
+                                <Label Grid.Row="2"
+                                       Text="{Binding Requisitos}"
+                                       />
+                                <Label Grid.Row="3"
+                                       Text="{Binding Labores}"
+                                       />
+                                <Label Grid.Row="4"
+                                       Text="{Binding RangoSal}"
+                                       />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
 
         </StackLayout>
     </ContentPage.Content>

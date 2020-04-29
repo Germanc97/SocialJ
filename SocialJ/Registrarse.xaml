@@ -39,8 +39,8 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Margin="0,0,30,0" Text="Registrar"  FontSize="Title" />
-                <Button Grid.Column="2" Text="Cancelar" FontSize="Title" TextColor="Red" />
+                <Button Grid.Column="0" Margin="0,0,30,0" Text="Registrar"  FontSize="Title" Clicked="Button_Clicked_Registrar" />
+                <Button Grid.Column="2" Text="Cancelar" FontSize="Title" TextColor="Red" Clicked="Button_Clicked_Cancelar" />
             </Grid>
         </Grid>
         
